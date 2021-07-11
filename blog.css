@@ -6,7 +6,6 @@ body{
 .container {
     display: grid;
     height: 100vmax;
-    max-width: 599px;
     font-size: 20px;
     margin: auto;
     border: solid 2px rgb(221, 29, 29);
@@ -45,6 +44,10 @@ body{
     border: solid 2px rebeccapurple;
     grid-area: con;
     background: rgb(255, 166, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     
 }
 
@@ -52,9 +55,6 @@ body{
     border: solid 2px rgb(243, 6, 6);
     grid-area: sec;
     background: cyan;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
 }
 .footer{
@@ -97,7 +97,73 @@ body{
         margin: auto;
     }
     
-@media only screen and (max-width: 599px) {
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .container {
+        display: grid;
+        height: 100vmax;
+        margin: auto;
+        border: solid 2px rgb(221, 29, 29);
+        grid-template-columns: repeat(2, 1fr)
+        grid-auto-rows: minmax(20px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(20px, auto);
+        grid-template-areas: 
+        "nav nav"
+        "hd hd"
+        "car car"
+        "con con"
+        "sec sec"
+        "ft ft";
+    }
+    .card{
+        border: solid 2px rgb(243, 6, 6);
+        grid-area: car;
+        background: chocolate;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    .card_content{
+        border: solid 2px rebeccapurple;
+        grid-area: con;
+        background: rgb(255, 166, 0);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }    
+  
+
+}
+
+@media only screen and (min-width: 901px) {
+    .container {
+        display: grid;
+        height: 100vmax;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr)
+        grid-auto-rows: minmax(20px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(20px, auto);
+        grid-template-areas: 
+        "nav nav nav nav"
+        "hd hd hd hd"
+        "car car car car"
+        "con con con con"
+        "sec sec sec sec"
+        "ft ft ft ft";
+    }
+    .card{
+        border: solid 2px rgb(243, 6, 6);
+        grid-area: car;
+        background: chocolate;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+    }
+    .card_content{
+        border: solid 2px rebeccapurple;
+        grid-area: con;
+        background: rgb(255, 166, 0);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+    }    
     
   
 
