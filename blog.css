@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    color: white;
     
 }
 
@@ -19,22 +20,32 @@ body{
     "sec"
     "ft";
 }
-    
- 
+
+.line {
+    width: 20px;
+    height: 3px;
+    background:whitesmoke;
+    margin: 3px;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+}
+
+
 .nav{
     border: solid 2px rgb(243, 6, 6);
     grid-area: nav;
-    background: blue;
 }
 .header {
     border: solid 2px rgb(243, 6, 6);
     grid-area: hd;
-    background: chartreuse;
 }
 .card{
     border: solid 2px rgb(243, 6, 6);
     grid-area: car;
-    background: chocolate;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +54,6 @@ body{
 .card_content{
     border: solid 2px rebeccapurple;
     grid-area: con;
-    background: rgb(255, 166, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,32 +61,29 @@ body{
     
 }
 
-.section{
+.section {
     border: solid 2px rgb(243, 6, 6);
     grid-area: sec;
     background: cyan;
 
 }
-.footer{
+.footer {
     border: solid 2px rgb(243, 6, 6);
     grid-area: ft;
     background: darkmagenta;
 }
 
-#card1{
-    border: solid 2px rgb(243, 6, 6);
+#card1 {
         padding: 20px;
         margin: auto;
 }
 
-#card2{
-    border: solid 2px rgb(243, 6, 6);
+#card2 {
         padding: 20px;
         margin: auto;
 }
 
-#card3{
-    border: solid 2px rgb(243, 6, 6);
+#card3 {
         padding: 20px;
         margin: auto;
 }
@@ -116,7 +123,6 @@ body{
     .card{
         border: solid 2px rgb(243, 6, 6);
         grid-area: car;
-        background: chocolate;
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
@@ -137,7 +143,6 @@ body{
     .container {
         display: grid;
         height: 100vmax;
-        width: 100%;
         grid-template-columns: repeat(4, 1fr)
         grid-auto-rows: minmax(20px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(20px, auto);
         grid-template-areas: 
@@ -149,9 +154,7 @@ body{
         "ft ft ft ft";
     }
     .card{
-        border: solid 2px rgb(243, 6, 6);
         grid-area: car;
-        background: chocolate;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: center;
