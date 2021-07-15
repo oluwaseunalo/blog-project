@@ -103,6 +103,7 @@ body{
         padding: 20px;
         margin: auto;
     }
+
     
 @media only screen and (min-width: 600px) and (max-width: 900px) {
     .container {
@@ -130,7 +131,6 @@ body{
     .card_content{
         border: solid 2px rebeccapurple;
         grid-area: con;
-        background: rgb(255, 166, 0);
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
@@ -162,7 +162,6 @@ body{
     .card_content{
         border: solid 2px rebeccapurple;
         grid-area: con;
-        background: rgb(255, 166, 0);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: center;
