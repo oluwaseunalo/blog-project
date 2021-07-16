@@ -1,15 +1,65 @@
 body{
-    background-color: black;
-    color: white;
-    
+    background-color: wheat;
+    color: black;
+    font-size: 16px;
+
 }
+button{
+    background-color: rgb(121, 19, 121);
+    color: wheat;
+}
+.date_posted{
+    margin-left: 0;
+    color: rgb(46, 29, 46);
+}
+
+.minute_read{
+    margin-left: 40%;
+    color: rgb(46, 29, 46);
+}
+.logo {
+    width: 300px;
+}
+
+.footer_logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 50%;
+}
+
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  li{
+      display: block;
+  }
+.icon{
+   display: inline;
+   padding: 0;
+   margin: -3%;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+  }
+
+.post_link{
+    text-decoration: none;
+    color: black;
+}
+
 
 .container {
     display: grid;
     height: 100vmax;
     font-size: 20px;
     margin: auto;
-    border: solid 2px rgb(221, 29, 29);
     grid-template-columns: 1fr
     grid-auto-rows: minmax(20px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(5px, auto);
     grid-template-areas: 
@@ -24,7 +74,7 @@ body{
 .line {
     width: 20px;
     height: 3px;
-    background:whitesmoke;
+    background: purple;
     margin: 3px;
 }
 
@@ -36,23 +86,22 @@ body{
 
 
 .nav{
-    border: solid 2px rgb(243, 6, 6);
     grid-area: nav;
+    
 }
 .header {
-    border: solid 2px rgb(243, 6, 6);
     grid-area: hd;
 }
 .card{
-    border: solid 2px rgb(243, 6, 6);
     grid-area: car;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    
 }
 
 .card_content{
-    border: solid 2px rebeccapurple;
     grid-area: con;
     display: flex;
     flex-direction: column;
@@ -60,40 +109,69 @@ body{
 
     
 }
+.card_firstcard{
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.5%;
+}
+
+.card_secondcard{
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.5%;
+}
+.card_thirdcard{
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.5%;
+}
+.card_fourthcard{
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.5%;
+}
+.card_firstcontent{
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.5%;
+}
+
+.card_secondcontent{
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.5%;
+}
+.card_thirdcontent{
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.5%;
+}
+.card_fourthcontent{
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.5%;
+}
 
 .footer_1 {
-    border: solid 2px rgb(243, 6, 6);
     grid-area: sec;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    color: rgb(197, 157, 197);
-    width: 100%;
     line-height: 50px;
-    
+    background-color: whitesmoke;
+
     
 
 }
 
-.footer_1_content1{
-    width: 20%;
-    padding: 2%;
-    
-    
+.ftlinks{
+    width: 40%;
+    color: rgb(46, 29, 46);
+    margin: 120px;
+    text-decoration: none;
 }
 
-.footer_1_content2{
-    width: 20%;
-    padding: 2%;
-    
-}
-
-.footer_1_content3{
-    width: 20%;
-    padding: 2%;
-    
-}
 
 
 .footer_2{
@@ -102,6 +180,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     grid-area: ft;
+    background-color: whitesmoke;
 }
     
 @media only screen and (min-width: 600px) and (max-width: 900px) {
@@ -109,7 +188,6 @@ body{
         display: grid;
         height: 100vmax;
         margin: auto;
-        border: solid 2px rgb(221, 29, 29);
         grid-template-columns: repeat(2, 1fr)
         grid-auto-rows: minmax(20px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) minmax(5px, auto);
         grid-template-areas: 
@@ -121,21 +199,18 @@ body{
         "ft ft";
     }
     .card{
-        border: solid 2px rgb(243, 6, 6);
         grid-area: car;
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
     }
     .card_content{
-        border: solid 2px rebeccapurple;
         grid-area: con;
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
     }    
     .footer_1 {
-        border: solid 2px rgb(243, 6, 6);
         grid-area: sec;
         display: flex;
         flex-direction: row;
@@ -164,6 +239,18 @@ body{
         "sec sec sec sec"
         "ft ft ft ft";
     }
+
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+
+    button{
+        text-align: center;
+        margin-left: 600px;
+    }
     .card{
         grid-area: car;
         display: grid;
@@ -171,7 +258,6 @@ body{
         justify-content: center;
     }
     .card_content{
-        border: solid 2px rebeccapurple;
         grid-area: con;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -179,7 +265,6 @@ body{
     }    
     
     .footer_1 {
-        border: solid 2px rgb(243, 6, 6);
         grid-area: sec;
         display: flex;
         flex-direction: row;
