@@ -5,12 +5,16 @@
     margin: 3px;
 }
 
+.menu_bar{
+    position: relative;
+}
+
 .hamburger {
     position: absolute;
     cursor: pointer;
-    right: 5%;
+    right: 50%;
 }
 
 .logo {
-width: 300px;
+width: 10px;
 }
