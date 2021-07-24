@@ -1,0 +1,35 @@
+@media only screen and (min-width: 901px) {
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 200px 200px 200px 50px;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "car car art art"
+    "car car art art"
+    "con con con con"
+    "ft ft ft ft";
+}
+
+}
+
+.menu_bar {
+    grid-area: nav;
+}
+
+.post_content {
+    grid-area: art;
+}
+
+.card_author {
+    grid-area: car;
+}
+
+.card_content {
+    grid-area: con;
+}
+
+.social_media {
+    grid-area: ft;
+}
