@@ -1,0 +1,92 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows:minmax(20px, auto) minmax(150px, auto) minmax(150px, auto) minmax{150px, auto} minmax(50px, auto);
+    grid-template-areas: 
+    "nav"
+    "art"
+    "car"
+    "con"
+    "ft";
+    }
+
+
+    
+.nav{
+    border: solid 2px black;
+    grid-area: nav;}
+
+.post-content {
+    border: solid 2px black;
+    grid-area: art;}
+
+.card_author{
+    grid-area: car;
+    border: solid 2px black;
+}
+
+.card_content{
+    grid-area: con;
+    border: solid 2px black;
+}
+
+
+.footer{
+    border: solid 2px black;
+    grid-area: ft;
+}
+
+
+@media only screen and (min-width: 901px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(20px, auto) minmax(150px, auto) minmax(150px, auto) minmax{150px, auto} minmax(50px, auto);
+        grid-template-areas: 
+        "nav nav nav nav"
+        "car art art art"
+        "car art art art"
+        "con con con con"
+        "ft ft ft ft";
+        }
+
+        .nav{
+            border: solid 2px black;
+            grid-area: nav;}
+        
+        .post-content {
+            border: solid 2px black;
+            grid-area: art;}
+        
+        .card_author{
+            grid-area: car;
+            border: solid 2px black;
+        }
+        
+        .card_content{
+            grid-area: con;
+            border: solid 2px black;
+        }
+        
+        
+        .footer{
+            border: solid 2px black;
+            grid-area: ft;
+        }
+
+    }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,16 @@
+.line {
+    width: 20px;
+    height: 3px;
+    background: purple;
+    margin: 3px;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+}
+
+.logo {
+width: 300px;
+}
