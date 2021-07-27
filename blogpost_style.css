@@ -1,14 +1,58 @@
-body{
+body {
     background-color: wheat;
     color: black;
 }
 
-@import "blogpost\smallscreens.css";
-@import "blogpost\mediumscreens.css";
-@import "blogpost\largescreens.css";
-@import "blogpost\navbar.css";
-@import "blogpost\section.css";
-@import "blogpost\footer.css";
+.container {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "art art art art"
+    "car car car car"
+    "con con con con"
+    "ft ft ft ft";
+    padding: 10px;
+}
+
+.line {
+    width: 20px;
+    height: 3px;
+    background: purple;
+    margin: 3px;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+}
+
+.logo {
+    width: 20%;
+    left: 3%;
+}
+
+.menu_bar {
+    grid-area: nav;
+    position: relative;
+}
+
+.post_content {
+    grid-area: art;
+}
+
+.card_author {
+    grid-area: car;
+}
+
+.card_content {
+    grid-area: con;
+}
+
+.social_media {
+    grid-area: ft;
+}
+
 
 .post_content {
     grid-area: art;
@@ -17,11 +61,101 @@ body{
 
 .post_image img {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
+    object-fit: cover;
 }
 
- 
+.content_post img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
 
-    
+.card_author {
+    border: solid 2px purple;
+    position: relative;
+    text-align: center;
+}
 
+.avatar {
+    width: 10%;
+    object-fit: cover;
+    left: 30%;
+    position: absolute;
+    top: 5%;
+    border: solid 2px red;
+}
+
+.card_icons {
+    display: flex;
+    justify-content: center;
+    max-width: 95%;
+    list-style: none;
+}
+
+
+.card_content {
+    border: solid 2px black;
+}
+
+.card_firstcontent{
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.5%;
+}
     
+.card_secondcontent {
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.5%;
+}
+
+.card_thirdcontent{
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.5%;
+}
+    
+.social_media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.social_logo {
+    max-width: 5%;
+    margin-right: 50%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: purple;
+}
+  
+.social_icons {
+    display: block;
+}
+
+.icon{
+   display: inline;
+   padding: 0;
+   margin: -3%;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+@media only screen and (max-width: 601px){
+    .avatar {
+        left: 7%;
+        width: 15%;
+    }
+}
