@@ -1,0 +1,116 @@
+@import url("nav.css");
+@import url("card.css");
+@import url("style_footer.css");
+
+
+body {
+    background-color: wheat;
+    color: black;
+    font-size: 20px;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.date_posted{
+    margin-left: 0;
+    color: rgb(46, 29, 46);
+}
+
+.minute_read{
+    margin-left: 40%;
+    color: rgb(46, 29, 46);
+}
+
+
+.post_link{
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "car car car car"
+    "con con con con"
+    "ftr ftr ftr ftr"
+    "ft ft ft ft";
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.hd_heropage {
+    color: wheat;
+    margin-top: 10%;
+}
+
+.card {
+    grid-area: car;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 98vw;
+}
+
+.card_content {
+    grid-area: con;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 98vw;
+}
+
+.footer_1 {
+    grid-area: ftr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 50px;
+    background-color: whitesmoke;
+}
+
+.footer_2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: ft;
+    background-color: whitesmoke;
+}
+    
+.ftlinks{
+    width: 40%;
+    color: rgb(46, 29, 46);
+    margin: 120px;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    .card_content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }    
+
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .card_content{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }  
+    
+}

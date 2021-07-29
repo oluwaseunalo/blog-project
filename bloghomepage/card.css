@@ -1,0 +1,96 @@
+.card_firstcard {
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.3%;
+}
+
+.card_firstcard:hover {
+    transform: scale(1.0);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.card_secondcard {
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.3%;
+}
+
+.card_secondcard:hover {
+    transform: scale(1.0);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.card_thirdcard {
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.3%;
+}
+
+.card_thirdcard:hover {
+    transform: scale(1.0);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.card_fourthcard {
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.3%;
+}
+
+.card_fourthcard:hover {
+    transform: scale(1.0);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+
+.card_firstcontent {
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.3%;
+}
+
+.card_firstcontent:hover {
+    transform: scale(1.0);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.card_secondcontent {
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.3%;
+}
+
+.card_secondcontent:hover {
+    transform: scale(1.0);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.card_thirdcontent {
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.3%;
+}
+
+.card_thirdcontent:hover {
+    transform: scale(1.0);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.card_fourthcontent {
+    border-radius: 5%;
+    border: solid 1px purple;
+    margin: 0.3%;
+}
+
+.card_fourthcontent:hover {
+    transform: scale(1.0);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    cursor: pointer;
+}

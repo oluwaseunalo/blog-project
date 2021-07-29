@@ -1,0 +1,52 @@
+.line {
+    width: 20px;
+    height: 3px;
+    background: whitesmoke;
+    margin: 3px;
+}
+
+.logo {
+    width: 300px;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+}
+
+button {
+    background-color: rgb(121, 19, 121);
+    color: wheat;
+}
+
+.nav {
+    grid-area: nav;
+    background-image: url("freeimg_47841037freejpg850.jpg");
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+    width: 98vw;
+    position: relative;
+}
+
+#hero h2 {
+    text-align: center;
+    max-width: 95vw;
+}
+
+#hero p {
+    text-align: center;
+    margin: 4%;
+    margin-right: 10%;
+}
+
+#hero button {
+    width: 100px;
+    position: relative;
+    left: 40%;
+    margin: 2%;
+
+
+
+}
