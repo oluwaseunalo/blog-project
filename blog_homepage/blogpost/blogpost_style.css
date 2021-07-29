@@ -149,6 +149,18 @@ body {
     color: purple;
 }
 
+#role {
+    color: purple;
+}
+
+#workplace {
+    color: purple;
+}
+
+#author_name {
+    color: purple;
+}
+
 @media only screen and (max-width: 601px) {
     .avatar {
         left: 7%;
