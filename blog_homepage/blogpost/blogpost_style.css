@@ -163,7 +163,7 @@ body {
 
 @media only screen and (max-width: 601px) {
     .avatar {
-        left: 7%;
+        left: 5%;
         width: 15%;
     }
 }
