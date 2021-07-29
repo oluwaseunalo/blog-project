@@ -167,3 +167,10 @@ body {
         width: 15%;
     }
 }
+
+@media only screen and (min-width: 602px) and (max-width: 1000px) {
+    .avatar {
+        left: 15%;
+        width: 15%;
+    }
+}
