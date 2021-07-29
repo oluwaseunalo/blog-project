@@ -22,7 +22,7 @@ button {
 
 .nav {
     grid-area: nav;
-    background-image: url("images\freeimg_47841037freejpg850.jpg");
+    background-image: url("..\\images\\freeimg_47841037freejpg850.jpg");
     background-size: cover;
     object-fit: cover;
     height: 100vh;
